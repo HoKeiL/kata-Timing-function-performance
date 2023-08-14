@@ -1,11 +1,16 @@
 /**
- * Adds together two numbers
- * @param a - the first number to add
- * @param b - the second number to add
- * @returns the total
+ *
+ * @param a - the amount of time to push to the array
  */
-function sum(a: number, b: number): number {
-    return a + b;
+
+function createArray(a: number): number[] {
+    const outputArray: number[] = [];
+
+    for (let i = 0; i < a; i++) {
+        outputArray.push(1);
+    }
+
+    return outputArray;
 }
 
-export { sum };
+export { createArray };

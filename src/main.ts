@@ -1,8 +1,13 @@
-import { sum } from "./skeleton";
+import { createArray } from "./skeleton";
 
 // Call your function of interest, here, instead of sum.
 //You can use vscode's "Debug main.ts" launcher to debug, starting here.
 
-const answer = sum(10, 200);
+const inputArray = createArray(10);
 
-console.log({ answer });
+const startTime = performance.now();
+inputArray.push(1);
+const stopTime = performance.now();
+const elapsedTime = stopTime - startTime;
+
+console.log({ elapsedTime });
